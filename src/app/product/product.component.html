@@ -1,0 +1,22 @@
+<p
+  [ngStyle]="{
+    backgroundColor: isProductAvailable ? 'orange' : 'pink'
+  }"
+  [ngClass]="{
+    'text-white': isProductAvailable,
+    'text-danger': !isProductAvailable
+  }"
+  class="alert alert-info"
+>
+  This product is <strong>{{ productName }}</strong>
+  and productId is <strong>{{ productId }}</strong>.
+  {{ isProductAvailable }}
+</p>
+
+<strong [ngClass]="{
+'d-none':!isProductAvailable
+}">The Product is Available</strong>
+<strong [ngClass]="{
+  'd-none':isProductAvailable
+}">The Product is not Available</strong>
+

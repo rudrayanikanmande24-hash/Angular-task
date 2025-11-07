@@ -1,0 +1,15 @@
+
+<p 
+[ngStyle]="{
+    backgroundColor:isMouseAvailable ? 'aqua' : 'yellow'
+}"
+[ngClass]="{
+    'text-warning':isMouseAvailable,
+    'text-danger':!isMouseAvailable
+}"
+ class="alert alert-succes">
+    This Mouse is {{mouseName}} 
+</p>
+
+<strong *ngIf="isMouseAvailable">The Mouse is available !!!</strong>
+<strong *ngIf="!isMouseAvailable">The Mouse is not available</strong>

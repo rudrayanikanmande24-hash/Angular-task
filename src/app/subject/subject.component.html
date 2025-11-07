@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li
+    *ngFor="let sub of subjects; let i = index"
+    class="list-group-item"
+    [ngClass]="{
+        'bg-info':(i+1)%2 === 0,
+        'bg-danger':(i+1)%2 !== 0
+    }">
+    {{i+1}} I Love <strong>{{sub}}</strong>
+    </li>
+</ul>

@@ -1,0 +1,12 @@
+
+<p
+[ngStyle]="{
+    backgroundColor:isKeyBaordAvailable ? 'aqua' : 'red'
+}"
+ class="alert alert-danger">
+    This KeyBoard is {{keyboardName}} 
+</p>
+
+
+<strong *ngIf="isKeyBaordAvailable">The keyboard is Available !!!</strong>
+<strong *ngIf="!isKeyBaordAvailable">The keyboard is not Availabel !!!</strong>

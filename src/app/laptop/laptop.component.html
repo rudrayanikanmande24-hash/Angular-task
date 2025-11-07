@@ -1,0 +1,22 @@
+
+<p
+  [ngStyle]="{
+    backgroundColor: isLaptopAvailable ? 'aqua' : 'green'
+  }"
+  [ngClass]="{
+    'text-danger': isLaptopAvailable,
+    'text-white': !isLaptopAvailable
+  }"
+  class="alert alert-info"
+>
+  This Laptop is <strong>{{ laptopName }}</strong>
+   {{ isLaptopAvailable }}
+</p>
+
+<strong [ngClass]="{
+    'd-none':!isLaptopAvailable
+    }">The Laptop is available</strong>
+
+    <strong [ngClass]="{
+        'd-none':isLaptopAvailable
+    }">The Laptop is not available</strong>

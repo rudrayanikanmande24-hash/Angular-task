@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li
+    *ngFor="let fruit of fruits; let i = index"
+    class="list-group-item"
+    [ngClass]="{
+        'bg-primary':(i+1)%2 === 0,
+        'bg-warning':(i+1)%2 !== 0
+    }">
+    {{i+1}} I Love <strong>{{fruit}}</strong>
+    </li>
+</ul>

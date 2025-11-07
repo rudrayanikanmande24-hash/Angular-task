@@ -1,0 +1,23 @@
+<p
+[ngStyle]="{
+    backgroundColor:isHeadphoneAvailabe ? 'red' : 'yellow'
+}"
+[ngClass]="{
+    'text-warning':isHeadphoneAvailabe,
+    'text-danger':!isHeadphoneAvailabe
+}"
+ class="alert alert-info">
+    This Headphone is {{headphoneName}}
+</p>
+
+<strong
+[ngClass]="{
+    'd-none':!isHeadphoneAvailabe
+}"
+>The Headphone is Available</strong>
+
+<strong 
+[ngClass]="{
+    'd-none':isHeadphoneAvailabe
+}"
+>The Headphone is not Availabel</strong>

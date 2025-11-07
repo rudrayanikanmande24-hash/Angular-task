@@ -1,0 +1,17 @@
+
+
+<p
+[ngStyle]="{
+    backgroundColor : isMobileAvilable ? 'pink' : 'aqua'
+}"
+
+[ngClass]="{
+    'text-danger': isMobileAvilable,
+    'text-white':!isMobileAvilable
+}"
+ class="alert alert-danger">
+   This Mobile is {{mobileName}}
+</p>
+
+<strong *ngIf="isMobileAvilable">The Mobile is Available !!!</strong>
+<strong *ngIf="!isMobileAvilable">The Mobile is not Available !!!</strong>

@@ -1,0 +1,18 @@
+<p
+[ngStyle]="{
+ backgroundColor : isMobile2Avialable ? 'purple' : 'magenta'
+}"
+[ngClass]="{
+    'text-info': isMobile2Avialable,
+    'text-warning':!isMobile2Avialable
+}"
+
+ class="alert alert-info">
+    This Mobile is {{mobile2Name}}
+</p>
+
+<strong *ngIf="isMobile2Avialable"; else noMobile>The Mobile is Avilable !!!</strong>
+
+<ng-template #noMobile>
+    <strong>The Mobile is not Available !!!</strong>
+</ng-template>

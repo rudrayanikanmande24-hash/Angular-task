@@ -1,0 +1,17 @@
+
+
+<p
+[ngStyle]="{
+    backgroundColor:isFruitAvailable ? 'yellow' : 'purple'
+}"
+
+[ngClass]="{
+    'text-danger':isFruitAvailable,
+    'text-info':!isFruitAvailable
+}"
+ class="alert alert-info">
+    This fruit is {{fruitName}}
+</p> 
+
+<strong *ngIf="isFruitAvailable">The Furit is Available !!!</strong>
+<strong *ngIf="!isFruitAvailable">The Fruit is not Availble !!!</strong>
