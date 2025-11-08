@@ -10,7 +10,7 @@ export class Mobile2Component implements OnInit{
   isMobile2Avialable:boolean=true
 
   ngOnInit(): void {
-      this.isMobile2Avialable=Math.random()>.5 ? true : false
+      this.isMobile2Avialable=Math.random() >.5 ? true : false
   }
 
 }

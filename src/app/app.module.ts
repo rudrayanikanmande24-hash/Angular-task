@@ -12,7 +12,6 @@ import { Mobilecomponent } from './mobile/mobile.component';
 import { Mobile2Component } from './mobile2/mobile2.component';
 import { fruit2Component } from './fruit2/fruit2.component';
 import { SubjectComponent } from './subject/subject.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +24,8 @@ import { SubjectComponent } from './subject/subject.component';
     Mobilecomponent,
     Mobile2Component,
     fruit2Component,
-    SubjectComponent
+    SubjectComponent,
+
   ],
   imports: [
     BrowserModule
